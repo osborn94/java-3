@@ -22,7 +22,7 @@ const months = [
     "Saturday",
     ];
     
-    const giveaway = document.querySelector(".giveaway");
+    const gradDate = document.querySelector(".gradDate");
     const deadline = document.querySelector('.deadline');
     const items = document.querySelectorAll(".deadline-format h4");
     
@@ -42,7 +42,7 @@ const months = [
     
     const weekday = weekdays[futureDate.getDay()];
     
-    giveaway.textContent = `Frontend ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
+    gradDate.textContent = `Frontend ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
     // future time in ms
     const futureTime = futureDate.getTime();
     
